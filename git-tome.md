@@ -1,6 +1,6 @@
 # Tome of Git
 
-# Update .gitignore
+## Update .gitignore
 
 Easy enough; just edit the `.gitignore` file and make any relevant changes to add/remove file from tracking. 
 
@@ -28,14 +28,14 @@ You must then add and commit these changes:
 $ git add .; git commit -m “.gitignore flushed”
 ```
 
-# Update/checkout from remote repo
+## Update/checkout from remote repo
 
 1. Fetch all the references from remote repo ` $ git fetch`
 2. Checkout the file/directory from the remote repo `$ git checkout origin/master path/to/file`
 
-# GIT BRANCH
+## GIT BRANCH
 
-## Deleting branches
+### Deleting branches
 
 To delete a local branch:
 ```
@@ -48,11 +48,11 @@ To delete a remote branch:
 git push -d <remote_name> <branch_name>
 ```
 
-# Git Stash
+## GIT STASH
 
 Temporarily save/stash altered, unstaged files so they will not be lost when switching branches. Stash *will not* save untracked files.
 
-## Stash altered files
+### Stash altered files
 
 ```
 $ git stash
@@ -60,17 +60,17 @@ $ git stash
 
 Equivalent of `git stash push`
 
-# Git Diff
+## GIT DIFF
 
 Compare two files and highlight differences.
 
-## Compare files between two branches.
+### Compare files between two branches.
 
 ```
 $ git diff <branch> <other branch> -- <filename>
 ``` 
 
-## Squashing commits
+### Squashing commits
 
 1. Determine how many commits to squash. Run this command to generate a pretty graph of your commit history:
 
@@ -92,7 +92,7 @@ Running the command will open your default text editor listing the commit hashes
 
 4. Input the message for the squashed commit.
 
-## Rebase vs Merge
+### Rebase vs Merge
 
 * Both integrate changes from one branch to another.
 * Merging is non-destructive; existing branches are unchanged.
@@ -102,13 +102,13 @@ Running the command will open your default text editor listing the commit hashes
 
 # Undoing History (git revert, git reset)
 
-## Revert vs Reset
+### Revert vs Reset
 
 `git revert` calculates what portions of files need to be changed in order to *revert* them to the previous version.
 
 `git reset` wipes out changed files completely and restores the previous version.
 
-## Undoing a pushed commit
+### Undoing a pushed commit
 
 ```
 git reset --hard HEAD~1
