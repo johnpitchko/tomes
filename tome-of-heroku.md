@@ -4,7 +4,12 @@
 
 1. If your Rails app is still using the default SQLite3 database, you must migrate to someting like PostgreSQL.
 1.1 Install PostgreSQL
-`brew install postgresql`
+```bash
+$ brew install postgresql
+$ brew services start postgresql
+```
+
+1.1 Create database user for your app
 
 1.2 Replace the sqlite3 gem with pg gem. Open your `Gemfile` and replace the line:
 `gem sqlite3`
@@ -37,4 +42,10 @@ $ RAILS_ENV=production rails server
 
 ```bash
 $ git heroku push main
+```
+
+6. Migrate your database on Heroku
+
+```bash
+$ heroku run rake db:migrate
 ```
