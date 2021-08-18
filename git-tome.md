@@ -92,7 +92,7 @@ Running the command will open your default text editor listing the commit hashes
 
 4. Input the message for the squashed commit.
 
-## GIT REBASE
+## Git Rebase
 
 ### Rebase vs Merge
 
@@ -124,7 +124,7 @@ Even more sweepingly, you can auto-resolve conflicts using a specified strategy 
 $ git rebase -Xtheirs origin/master
 ```
 
-# Undoing History (git revert, git reset)
+## Undoing History (git revert, git reset)
 
 ### Revert vs Reset
 
@@ -139,7 +139,7 @@ git reset --hard HEAD~1
 git push -f <remote> <branch>
 ```
 
-## GIT COOKBOOK
+## Git Cookbook
 
 ### Update `development` branch from `master`
 
