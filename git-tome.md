@@ -138,3 +138,16 @@ $ git rebase -Xtheirs origin/master
 git reset --hard HEAD~1
 git push -f <remote> <branch>
 ```
+
+## GIT COOKBOOK
+
+### Update `development` branch from `master`
+
+Source: [StackOverflow](https://stackoverflow.com/questions/20101994/git-pull-from-master-into-the-development-branch/20103414)
+```
+git fetch origin
+git checkout master
+git merge --ff-only origin/master
+git checkout dmgr2
+git merge --no-ff origin/master
+```
