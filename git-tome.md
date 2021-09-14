@@ -139,6 +139,13 @@ git reset --hard HEAD~1
 git push -f <remote> <branch>
 ```
 
+### Undoing a `rebase`
+
+Source [Undoing a git rebase](https://stackoverflow.com/questions/134882/undoing-a-git-rebase)
+```
+git reset --hard ORIG_HEAD
+```
+
 ## Git Cookbook
 
 ### Update `development` branch from `master`
