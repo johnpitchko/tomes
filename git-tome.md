@@ -59,7 +59,8 @@ $ git stash push
 ```
 
 ### Restore altered files from stash
-````
+
+```
 $ git stash pop
 ```
 
