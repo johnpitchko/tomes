@@ -55,7 +55,12 @@ Temporarily save/stash altered, unstaged files so they will not be lost when swi
 ### Stash altered files
 
 ```
-$ git stash
+$ git stash push
+```
+
+### Restore altered files from stash
+````
+$ git stash pop
 ```
 
 Equivalent of `git stash push`
